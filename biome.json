@@ -1,0 +1,23 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.1.4/schema.json",
+    "formatter": {
+        "enabled": true,
+        "useEditorconfig": true,
+        "lineWidth": 120
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true
+        }
+    },
+    "assist": {
+        "enabled": true,
+        "actions": {
+            "recommended": true
+        }
+    },
+    "files": {
+        "includes": ["**", "!**/dist/**", "!**/types/**", "!**/node_modules/**"]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "name": "babylon-vrm-0.0",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "VRM 0.0 implementation for Babylon.js",
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yamayuski/babylon-vrm.git"
+    },
+    "keywords": [
+        "3D",
+        "html5",
+        "webgl",
+        "webgpu",
+        "babylon.js",
+        "gltf",
+        "vrm"
+    ],
+    "homepage": "https://github.com/yamayuski/babylon-vrm",
+    "bugs": {
+        "url": "https://github.com/yamayuski/babylon-vrm/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Masaru Yamagishi",
+        "email": "m.yamagishi90+git@gmail.com",
+        "url": "https://cafe-capy.net"
+    },
+    "main": "dist/umd/index.js",
+    "module": "dist/esm/index.mjs",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "import": "./dist/esm/index.mjs",
+            "require": "./dist/cjs/index.cjs"
+        }
+    },
+    "dependencies": {
+        "@pixiv/types-vrm-0.0": ">=1.0.0"
+    },
+    "devDependencies": {
+        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/loaders": "^8.0.0"
+    },
+    "peerDependencies": {
+        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/loaders": "^8.0.0"
+    },
+    "scripts": {
+        "build": "rm -rf dist && rolldown build -c rolldown.config.ts && tsc --declaration --emitDeclarationOnly --outDir dist/types"
+    }
+}

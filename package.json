@@ -1,0 +1,56 @@
+{
+    "type": "module",
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yamayuski/babylon-vrm.git"
+    },
+    "description": "A VRM, glTF 2.0 extension implementation for Babylon.js",
+    "keywords": [
+        "3D",
+        "html5",
+        "webgl",
+        "webgpu",
+        "babylon.js",
+        "gltf",
+        "vrm"
+    ],
+    "homepage": "https://github.com/yamayuski/babylon-vrm",
+    "bugs": {
+        "url": "https://github.com/yamayuski/babylon-vrm/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Masaru Yamagishi",
+        "email": "m.yamagishi90+git@gmail.com",
+        "url": "https://cafe-capy.net"
+    },
+    "name": "babylon-vrm-root",
+    "private": true,
+    "packageManager": "npm@11.5.2",
+    "engines": {
+        "node": ">=20.9.0 <23",
+        "npm": "^11"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/loaders": "^8.0.0",
+        "@biomejs/biome": "2.1.4",
+        "@types/node": "^22.0.0",
+        "cross-env": "^10.0.0",
+        "rolldown": "^1.0.0-beta.31",
+        "typescript": "^5.9.2"
+    },
+    "scripts": {
+        "format": "npx @biomejs/biome format --write",
+        "check": "npx @biomejs/biome check",
+        "build-dev": "cross-env NODE_ENV=development npm run build --workspaces --if-present",
+        "build-prod": "cross-env NODE_ENV=production npm run build --workspaces --if-present"
+    }
+}
