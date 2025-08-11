@@ -1,0 +1,60 @@
+{
+    "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.schema.json",
+    "name": "Babylon VRM Dev Container",
+    "init": true,
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "workspaceFolder": "/workspace",
+    "remoteUser": "node",
+    "containerUser": "node",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true,
+            "upgradePackages": true,
+            "username": "node",
+            "userUid": "1000",
+            "userGid": "1000"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "-dbaeumer.vscode-eslint",
+                "-esbenp.prettier-vscode",
+                "biomejs.biome",
+                "EditorConfig.EditorConfig",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "GitHub.vscode-pull-request-github",
+                "DavidAnson.vscode-markdownlint",
+                "christian-kohler.npm-intellisense"
+            ],
+            "settings": {
+                "git.autofetch": "all",
+                "git.enableCommitSigning": true,
+                "git.enableSmartCommit": true,
+                "git.openRepositoryInParentFolders": "never",
+                "git.pruneOnFetch": true,
+                "github.copilot.chat.agent.thinkingTool": true,
+                "github.copilot.chat.codesearch.enabled": true,
+                "github.copilot.chat.editor.temporalContext.enabled": true,
+                "github.copilot.chat.edits.temporalContext.enabled": true,
+                "github.copilot.chat.enableRetryAfterFilteredResponse": true,
+                "github.copilot.chat.generateTests.codeLens": true,
+                "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+                "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+                "github.copilot.chat.languageContext.typescript.enabled": true,
+                "github.copilot.chat.notebook.followCellExecution.enabled": true,
+                "github.copilot.enable": {
+                    "markdown": true
+                },
+                "github.copilot.nextEditSuggestions.enabled": true
+            }
+        }
+    }
+}
