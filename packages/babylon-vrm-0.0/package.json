@@ -30,14 +30,14 @@
         "email": "m.yamagishi90+git@gmail.com",
         "url": "https://cafe-capy.net"
     },
-    "main": "dist/umd/index.js",
-    "module": "dist/esm/index.mjs",
+    "main": "dist/umd/babylon-vrm-0.0.umd.cjs",
+    "module": "dist/esm/babylon-vrm-0.0.esm.js",
     "types": "dist/types/index.d.ts",
     "exports": {
         ".": {
             "types": "./dist/types/index.d.ts",
-            "import": "./dist/esm/index.mjs",
-            "require": "./dist/cjs/index.cjs"
+            "import": "./dist/esm/babylon-vrm-0.0.esm.js",
+            "require": "./dist/cjs/babylon-vrm-0.0.cjs"
         }
     },
     "devDependencies": {
@@ -49,7 +49,9 @@
         "@babylonjs/loaders": "^8.0.0"
     },
     "scripts": {
-        "build": "rm -rf dist && rolldown build -c rolldown.config.ts && tsc --declaration --emitDeclarationOnly --outDir dist/types",
+        "test": "vitest",
+        "test:coverage": "vitest run --coverage",
+        "build": "rm -rf dist && vite build && tsc --declaration --emitDeclarationOnly --outDir dist/types",
         "generate-schema": "npx json-schema-to-typescript -i '../../vrm-specification/specification/0.0/schema/' -o src/schema/ --cwd='../../vrm-specification/specification/0.0/schema' --no-additionalProperties --enableConstEnums --format=false --unknownAny"
     }
 }

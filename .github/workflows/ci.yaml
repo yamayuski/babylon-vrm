@@ -20,8 +20,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run ci
+      - run: pnpm run lint
       - run: pnpm run build:prod
+      - run: pnpm test
 
   schema-is-latest:
     runs-on: ubuntu-latest
