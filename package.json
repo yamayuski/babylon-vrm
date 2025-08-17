@@ -41,16 +41,16 @@
     "devDependencies": {
         "@babylonjs/core": "^8.0.0",
         "@babylonjs/loaders": "^8.0.0",
-        "@biomejs/biome": "2.1.4",
+        "@biomejs/biome": "2.2.0",
         "@types/node": "^24.2.1",
         "cross-env": "^10.0.0",
         "rolldown": "^1.0.0-beta.31",
         "typescript": "^5.9.2"
     },
     "scripts": {
-        "format": "npx @biomejs/biome format --write",
-        "check": "npx @biomejs/biome check",
-        "build-dev": "cross-env NODE_ENV=development npm run build --workspaces --if-present",
-        "build-prod": "cross-env NODE_ENV=production npm run build --workspaces --if-present"
+        "ci:fix": "npx @biomejs/biome check --write --unsafe",
+        "ci": "npx @biomejs/biome ci",
+        "build:dev": "cross-env NODE_ENV=development npm run build --workspaces --if-present",
+        "build:prod": "cross-env NODE_ENV=production npm run build --workspaces --if-present"
     }
 }

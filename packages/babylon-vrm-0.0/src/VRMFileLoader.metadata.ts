@@ -16,10 +16,10 @@ export const VRMFileLoaderMetadata = {
     canDirectLoad(data: string): boolean {
         return (
             (data.indexOf("asset") !== -1 && data.indexOf("version") !== -1) ||
-            data.startsWith("data:base64," + GLTFMagicBase64Encoded) || // this is technically incorrect, but will continue to support for backcompat.
-            data.startsWith("data:;base64," + GLTFMagicBase64Encoded) ||
-            data.startsWith("data:application/octet-stream;base64," + GLTFMagicBase64Encoded) ||
-            data.startsWith("data:model/gltf-binary;base64," + GLTFMagicBase64Encoded)
+            data.startsWith(`data:base64,${GLTFMagicBase64Encoded}`) || // this is technically incorrect, but will continue to support for backcompat.
+            data.startsWith(`data:;base64,${GLTFMagicBase64Encoded}`) ||
+            data.startsWith(`data:application/octet-stream;base64,${GLTFMagicBase64Encoded}`) ||
+            data.startsWith(`data:model/gltf-binary;base64,${GLTFMagicBase64Encoded}`)
         );
     },
 } as const satisfies ISceneLoaderPluginMetadata;
