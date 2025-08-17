@@ -35,19 +35,24 @@
         "node": "^22.11.0 || ^24.6.0"
     },
     "devDependencies": {
-        "@babylonjs/core": "^8.0.0",
-        "@babylonjs/loaders": "^8.0.0",
+        "@babylonjs/core": "^8.23.1",
+        "@babylonjs/loaders": "^8.23.1",
         "@biomejs/biome": "2.2.0",
-        "@types/node": "^24.2.1",
+        "@types/node": "^24.3.0",
+        "@vitest/coverage-v8": "^3.2.4",
         "cross-env": "^10.0.0",
-        "rolldown": "^1.0.0-beta.31",
-        "typescript": "^5.9.2"
+        "rolldown": "1.0.0-beta.32",
+        "typescript": "^5.9.2",
+        "vite": "^7.1.2",
+        "vitest": "^3.2.4"
     },
     "scripts": {
-        "ci:fix": "npx @biomejs/biome check --write --unsafe",
-        "ci": "npx @biomejs/biome ci",
+        "test": "pnpm run --recursive --if-present test",
+        "test:coverage": "pnpm run --recursive --if-present test:coverage",
+        "lint": "npx @biomejs/biome ci",
+        "lint:fix": "npx @biomejs/biome check --write --unsafe",
         "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
         "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build",
-        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run ci:fix"
+        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run lint:fix"
     }
 }

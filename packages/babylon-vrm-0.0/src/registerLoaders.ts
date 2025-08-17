@@ -14,6 +14,7 @@ import { VRMFileLoaderMetadata } from "./VRMFileLoader.metadata";
  * Registers the VRM file loader as glTFFileLoader.
  */
 export function registerLoaders(): void {
+    // This makes sure that the VRM file loader is registered as a glTF file loader.
     RegisterSceneLoaderPlugin({
         ...VRMFileLoaderMetadata,
         createPlugin: async (options: SceneLoaderPluginOptions) => {
@@ -22,6 +23,7 @@ export function registerLoaders(): void {
         },
     } satisfies ISceneLoaderPluginFactory);
 
+    // Register the VRM 0.x extension for glTF.
     registerGLTFExtension("VRM", true, async (loader) => {
         const { VRM } = await import("./Extensions/VRM");
         return new VRM(loader);
