@@ -10,14 +10,14 @@ export default defineConfig([
                 sourcemap: true,
                 file: "dist/esm/index.mjs",
                 inlineDynamicImports: true,
-                globals: (name) => /@babylonjs\//.test(name) && "BABYLON" || name,
+                globals: (name) => (/@babylonjs\//.test(name) && "BABYLON") || name,
             },
             {
                 format: "cjs",
                 sourcemap: true,
                 file: "dist/cjs/index.cjs",
                 inlineDynamicImports: true,
-                globals: (name) => /@babylonjs\//.test(name) && "BABYLON" || name,
+                globals: (name) => (/@babylonjs\//.test(name) && "BABYLON") || name,
             },
             {
                 format: "umd",
@@ -25,12 +25,9 @@ export default defineConfig([
                 file: "dist/umd/index.js",
                 sourcemap: true,
                 inlineDynamicImports: true,
-                globals: (name) => /@babylonjs\//.test(name) && "BABYLON" || name,
+                globals: (name) => (/@babylonjs\//.test(name) && "BABYLON") || name,
             },
         ],
-        external: [
-            /@babylonjs\//,
-            /node_modules/,
-        ],
+        external: [/@babylonjs\//, /node_modules/],
     },
 ]);

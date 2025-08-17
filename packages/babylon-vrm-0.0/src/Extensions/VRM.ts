@@ -2,12 +2,13 @@
  * @license MIT
  */
 
-import { GLTFLoader, IGLTFLoaderExtension } from "@babylonjs/loaders/glTF/2.0";
+import type { GLTFLoader, IGLTFLoaderExtension } from "@babylonjs/loaders/glTF/2.0";
 
+// biome-ignore lint/complexity/noBannedTypes: No options so far
 export type VRMOptions = {};
 
-declare module "@babylonjs/loaders" {
-    export interface GLTFLoaderExtensionOptions {
+declare module "@babylonjs/loaders/glTF/2.0" {
+    interface GLTFLoaderExtensionOptions {
         vrm: VRMOptions;
     }
 }
@@ -19,7 +20,8 @@ export class VRM implements IGLTFLoaderExtension {
     public enabled = true;
 
     public constructor(loader: GLTFLoader) {
-        const options = loader.parent.extensionOptions[NAME];
+        // @ts-expect-error
+        const _options = loader.parent.extensionOptions[NAME];
     }
 
     public dispose(): void {

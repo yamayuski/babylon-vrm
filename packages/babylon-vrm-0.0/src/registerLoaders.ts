@@ -2,13 +2,13 @@
  * @license MIT
  */
 
+import {
+    type ISceneLoaderPluginFactory,
+    RegisterSceneLoaderPlugin,
+    type SceneLoaderPluginOptions,
+} from "@babylonjs/core/Loading/sceneLoader";
 import { registerGLTFExtension } from "@babylonjs/loaders/glTF/2.0";
 import { VRMFileLoaderMetadata } from "./VRMFileLoader.metadata";
-import {
-    ISceneLoaderPluginFactory,
-    RegisterSceneLoaderPlugin,
-    SceneLoaderPluginOptions,
-} from "@babylonjs/core/Loading/sceneLoader";
 
 /**
  * Registers the VRM file loader as glTFFileLoader.
