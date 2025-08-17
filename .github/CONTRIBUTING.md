@@ -19,6 +19,14 @@ Please use the GitHub issues for:
 - Bugs
 - Feature requests
 
+And not for:
+
+- Babylon.js specification/implementation issues
+- glTF specification issues
+- VRM specification issues
+
+These may be ignored.
+
 ## Pull requests
 
 TODO

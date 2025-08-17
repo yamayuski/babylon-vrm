@@ -31,9 +31,6 @@
         "email": "m.yamagishi90+git@gmail.com",
         "url": "https://cafe-capy.net"
     },
-    "dependencies": {
-        "@pixiv/types-vrm-0.0": ">=1.0.0"
-    },
     "devDependencies": {
         "@babylonjs/core": "^8.0.0",
         "@babylonjs/loaders": "^8.0.0"

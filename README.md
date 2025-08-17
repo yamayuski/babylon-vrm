@@ -6,7 +6,9 @@ VRM implementation for Babylon.js as glTF 2.0 Extension
 
 ## Development
 
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/yamayuski/babylon-vrm)
+[![Open in Dev Containers(vscode)](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/yamayuski/babylon-vrm)
+
+[![Open in Dev Containers(vscode-insiders)](https://img.shields.io/static/v1?label=Dev%20Containers%28insiders%29&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode-insiders://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/yamayuski/babylon-vrm)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/yamayuski/babylon-vrm?quickstart=1)
 
