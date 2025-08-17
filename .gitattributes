@@ -1,2 +1,3 @@
 * text=auto eol=lf
 pnpm-lock.yaml text eol=lf -diff linguist-generated
+**/schema/**/*.d.ts text eol=lf diff linguist-generated
