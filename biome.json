@@ -18,6 +18,6 @@
         }
     },
     "files": {
-        "includes": ["**", "!**/dist", "!**/types", "!**/node_modules"]
+        "includes": ["**", "!**/dist", "!**/types", "!**/node_modules", "!**/vrm-specification"]
     }
 }

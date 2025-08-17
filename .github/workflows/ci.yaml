@@ -3,6 +3,9 @@ name: "CI"
 on:
   push:
 
+permissions:
+  contents: read
+
 jobs:
   biome:
     runs-on: ubuntu-latest
@@ -19,3 +22,21 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run ci
       - run: pnpm run build:prod
+
+  schema-is-latest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+          submodules: true
+      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          run_install: false
+      - run: pnpm run generate-schema
+      - run: |
+          if ! git diff --quiet || ! git diff --cached --quiet; then
+            echo "ERROR: Schema is not up to date" >&2
+            exit 1
+          fi

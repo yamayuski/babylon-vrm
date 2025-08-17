@@ -49,6 +49,7 @@
         "@babylonjs/loaders": "^8.0.0"
     },
     "scripts": {
-        "build": "rm -rf dist && rolldown build -c rolldown.config.ts && tsc --declaration --emitDeclarationOnly --outDir dist/types"
+        "build": "rm -rf dist && rolldown build -c rolldown.config.ts && tsc --declaration --emitDeclarationOnly --outDir dist/types",
+        "generate-schema": "npx json-schema-to-typescript -i '../../vrm-specification/specification/0.0/schema/' -o src/schema/ --cwd='../../vrm-specification/specification/0.0/schema' --no-additionalProperties --enableConstEnums --format=false --unknownAny"
     }
 }

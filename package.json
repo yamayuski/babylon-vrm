@@ -47,6 +47,7 @@
         "ci:fix": "npx @biomejs/biome check --write --unsafe",
         "ci": "npx @biomejs/biome ci",
         "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
-        "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build"
+        "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build",
+        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run ci:fix"
     }
 }
