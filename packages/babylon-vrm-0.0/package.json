@@ -40,9 +40,6 @@
             "require": "./dist/cjs/index.cjs"
         }
     },
-    "dependencies": {
-        "@pixiv/types-vrm-0.0": ">=1.0.0"
-    },
     "devDependencies": {
         "@babylonjs/core": "^8.0.0",
         "@babylonjs/loaders": "^8.0.0"

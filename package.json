@@ -30,14 +30,10 @@
     },
     "name": "babylon-vrm-root",
     "private": true,
-    "packageManager": "npm@11.5.2",
+    "packageManager": "pnpm@10.14.0",
     "engines": {
-        "node": ">=20.9.0 <23",
-        "npm": "^11"
+        "node": "^22.11.0 || ^24.6.0"
     },
-    "workspaces": [
-        "packages/*"
-    ],
     "devDependencies": {
         "@babylonjs/core": "^8.0.0",
         "@babylonjs/loaders": "^8.0.0",
@@ -50,7 +46,7 @@
     "scripts": {
         "ci:fix": "npx @biomejs/biome check --write --unsafe",
         "ci": "npx @biomejs/biome ci",
-        "build:dev": "cross-env NODE_ENV=development npm run build --workspaces --if-present",
-        "build:prod": "cross-env NODE_ENV=production npm run build --workspaces --if-present"
+        "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
+        "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build"
     }
 }
