@@ -38,9 +38,14 @@
         "@babylonjs/core": "^8.23.1",
         "@babylonjs/loaders": "^8.23.1",
         "@biomejs/biome": "2.2.0",
+        "@changesets/cli": "^2.29.6",
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
+        "@commitlint/prompt-cli": "^19.8.1",
         "@types/node": "^24.3.0",
         "@vitest/coverage-v8": "^3.2.4",
         "cross-env": "^10.0.0",
+        "husky": "^9.1.7",
         "rolldown": "1.0.0-beta.32",
         "typescript": "^5.9.2",
         "vite": "^7.1.2",
@@ -53,6 +58,9 @@
         "lint:fix": "npx @biomejs/biome check --write --unsafe",
         "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
         "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build",
-        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run lint:fix"
+        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run lint:fix",
+        "ci": "pnpm run lint && pnpm run build:prod && pnpm test",
+        "prepare": "husky",
+        "commit": "commit"
     }
 }
