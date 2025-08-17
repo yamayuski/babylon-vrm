@@ -33,7 +33,8 @@
                 "GitHub.vscode-pull-request-github",
                 "DavidAnson.vscode-markdownlint",
                 "christian-kohler.npm-intellisense",
-                "pflannery.vscode-versionlens"
+                "pflannery.vscode-versionlens",
+                "vivaxy.vscode-conventional-commits"
             ],
             "settings": {
                 "git.autofetch": "all",

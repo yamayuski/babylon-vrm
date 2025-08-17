@@ -1,7 +1,7 @@
 {
-    "name": "babylon-vrm-0.0",
+    "name": "@yamayuski/babylon-vrm-0.0",
     "type": "module",
-    "version": "0.0.1",
+    "version": "0.0.1-alpha.0",
     "description": "VRM 0.0 implementation for Babylon.js",
     "publishConfig": {
         "access": "public",
@@ -30,6 +30,9 @@
         "email": "m.yamagishi90+git@gmail.com",
         "url": "https://cafe-capy.net"
     },
+    "files": [
+        "dist/**"
+    ],
     "main": "dist/umd/babylon-vrm-0.0.umd.cjs",
     "module": "dist/esm/babylon-vrm-0.0.esm.js",
     "types": "dist/types/index.d.ts",

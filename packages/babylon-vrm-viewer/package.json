@@ -1,7 +1,7 @@
 {
-    "name": "babylon-vrm-viewer",
+    "name": "@yamayuski/babylon-vrm-viewer",
     "type": "module",
-    "version": "0.0.1",
+    "version": "0.0.1-alpha.0",
     "description": "VRM browser viewer for Babylon.js",
     "publishConfig": {
         "access": "public",
@@ -31,12 +31,26 @@
         "email": "m.yamagishi90+git@gmail.com",
         "url": "https://cafe-capy.net"
     },
-    "devDependencies": {
+    "files": [
+        "dist/**"
+    ],
+    "main": "dist/umd/babylon-vrm-viewer.umd.cjs",
+    "module": "dist/esm/babylon-vrm-viewer.esm.js",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "import": "./dist/esm/babylon-vrm-viewer.esm.js",
+            "require": "./dist/cjs/babylon-vrm-viewer.cjs"
+        }
+    },
+    "dependencies": {
         "@babylonjs/core": "^8.0.0",
         "@babylonjs/loaders": "^8.0.0"
     },
-    "peerDependencies": {
-        "@babylonjs/core": "^8.0.0",
-        "@babylonjs/loaders": "^8.0.0"
+    "scripts": {
+        "test": "vitest",
+        "test:coverage": "vitest run --coverage",
+        "build": "rm -rf dist && vite build && tsc --declaration --emitDeclarationOnly --outDir dist/types"
     }
 }

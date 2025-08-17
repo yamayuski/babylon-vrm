@@ -1,0 +1,9 @@
+{
+    "mode": "pre",
+    "tag": "alpha",
+    "initialVersions": {
+        "@yamayuski/babylon-vrm-0.0": "0.0.0",
+        "@yamayuski/babylon-vrm-viewer": "0.0.0"
+    },
+    "changesets": ["clever-bars-share"]
+}
