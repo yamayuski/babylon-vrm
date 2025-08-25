@@ -35,7 +35,7 @@
         "node": "^22.11.0 || ^24.6.0"
     },
     "devDependencies": {
-        "@babylonjs/core": "^8.23.1",
+        "@babylonjs/core": "^8.24.0",
         "@babylonjs/loaders": "^8.23.1",
         "@biomejs/biome": "2.2.0",
         "@changesets/cli": "^2.29.6",

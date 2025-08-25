@@ -44,11 +44,11 @@
         }
     },
     "devDependencies": {
-        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/core": "^8.24.0",
         "@babylonjs/loaders": "^8.0.0"
     },
     "peerDependencies": {
-        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/core": "^8.24.0",
         "@babylonjs/loaders": "^8.0.0"
     },
     "scripts": {
