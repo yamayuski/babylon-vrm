@@ -12,8 +12,8 @@ importers:
         specifier: ^8.24.0
         version: 8.24.0
       '@babylonjs/loaders':
-        specifier: ^8.23.1
-        version: 8.23.1(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.24.0
+        version: 8.24.0(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
       '@biomejs/biome':
         specifier: 2.2.0
         version: 2.2.0
@@ -60,8 +60,8 @@ importers:
         specifier: ^8.24.0
         version: 8.24.0
       '@babylonjs/loaders':
-        specifier: ^8.0.0
-        version: 8.23.1(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.24.0
+        version: 8.24.0(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
 
   packages/babylon-vrm-viewer:
     dependencies:
@@ -69,8 +69,8 @@ importers:
         specifier: ^8.24.0
         version: 8.24.0
       '@babylonjs/loaders':
-        specifier: ^8.0.0
-        version: 8.23.1(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.24.0
+        version: 8.24.0(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)
 
 packages:
 
@@ -106,8 +106,8 @@ packages:
   '@babylonjs/core@8.24.0':
     resolution: {integrity: sha512-c3ykhx4iBm3Rvt1DYmDBw4tlhY8OHs299hx4QYwah3bk/HgkFd1t2J1LncAW4VN3ThPqJ89FmXUKWuigOoWaVQ==}
 
-  '@babylonjs/loaders@8.23.1':
-    resolution: {integrity: sha512-7FJ7PRaQWW94Abvr7vqKN8jTL7hH0F3RuTlgCZno6vQsdMCf+9Q3dVE0zRA2pbGg8G+RS4V/tYhL5nbIlX/1xQ==}
+  '@babylonjs/loaders@8.24.0':
+    resolution: {integrity: sha512-V0mmc0wm908S4kTXEsKm0lIOfE1DMqgu8b/TF42JO7+ObaBO26JNSisXRF7o5tA8iXrBwItpWUeMGsbARXlh0g==}
     peerDependencies:
       '@babylonjs/core': ^8.0.0
       babylonjs-gltf2interface: ^8.0.0
@@ -1830,7 +1830,7 @@ snapshots:
 
   '@babylonjs/core@8.24.0': {}
 
-  '@babylonjs/loaders@8.23.1(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)':
+  '@babylonjs/loaders@8.24.0(@babylonjs/core@8.24.0)(babylonjs-gltf2interface@8.23.1)':
     dependencies:
       '@babylonjs/core': 8.24.0
       babylonjs-gltf2interface: 8.23.1
