@@ -37,7 +37,7 @@
     "devDependencies": {
         "@babylonjs/core": "^8.23.1",
         "@babylonjs/loaders": "^8.23.1",
-        "@biomejs/biome": "2.2.0",
+        "@biomejs/biome": "2.2.2",
         "@changesets/cli": "^2.29.6",
         "@commitlint/cli": "^19.8.1",
         "@commitlint/config-conventional": "^19.8.1",
