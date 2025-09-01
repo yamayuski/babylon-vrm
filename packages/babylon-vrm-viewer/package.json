@@ -45,7 +45,7 @@
         }
     },
     "dependencies": {
-        "@babylonjs/core": "^8.24.0",
+        "@babylonjs/core": "^8.25.0",
         "@babylonjs/loaders": "^8.24.0"
     },
     "scripts": {
