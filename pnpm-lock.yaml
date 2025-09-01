@@ -12,8 +12,8 @@ importers:
         specifier: ^8.25.0
         version: 8.25.0
       '@babylonjs/loaders':
-        specifier: ^8.24.0
-        version: 8.24.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.25.0
+        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
       '@biomejs/biome':
         specifier: 2.2.2
         version: 2.2.2
@@ -60,8 +60,8 @@ importers:
         specifier: ^8.25.0
         version: 8.25.0
       '@babylonjs/loaders':
-        specifier: ^8.24.0
-        version: 8.24.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.25.0
+        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
 
   packages/babylon-vrm-viewer:
     dependencies:
@@ -69,8 +69,8 @@ importers:
         specifier: ^8.25.0
         version: 8.25.0
       '@babylonjs/loaders':
-        specifier: ^8.24.0
-        version: 8.24.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        specifier: ^8.25.0
+        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
 
 packages:
 
@@ -106,8 +106,8 @@ packages:
   '@babylonjs/core@8.25.0':
     resolution: {integrity: sha512-hBPSp+hkcOd35Dg8eUh35nTrod+J8ayLw2f5n+nynQqVEDb54CptbVTeV6cd3cnrH65xSm+us/c+h1H6JzAbXw==}
 
-  '@babylonjs/loaders@8.24.0':
-    resolution: {integrity: sha512-V0mmc0wm908S4kTXEsKm0lIOfE1DMqgu8b/TF42JO7+ObaBO26JNSisXRF7o5tA8iXrBwItpWUeMGsbARXlh0g==}
+  '@babylonjs/loaders@8.25.0':
+    resolution: {integrity: sha512-hoXE/AwOli7l+R3Nz7cmUsnt5cSrIRQWaGaUjmQ4dZJNI0JqzmkxUuQq9eJfNUtjDnjEM1RfXzIlt2QdFg4KoA==}
     peerDependencies:
       '@babylonjs/core': ^8.0.0
       babylonjs-gltf2interface: ^8.0.0
@@ -1830,7 +1830,7 @@ snapshots:
 
   '@babylonjs/core@8.25.0': {}
 
-  '@babylonjs/loaders@8.24.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)':
+  '@babylonjs/loaders@8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)':
     dependencies:
       '@babylonjs/core': 8.25.0
       babylonjs-gltf2interface: 8.23.1
