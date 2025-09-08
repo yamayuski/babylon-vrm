@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.25.0
-        version: 8.25.0
+        specifier: ^8.26.0
+        version: 8.26.0
       '@babylonjs/loaders':
         specifier: ^8.25.0
-        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        version: 8.25.0(@babylonjs/core@8.26.0)(babylonjs-gltf2interface@8.23.1)
       '@biomejs/biome':
         specifier: 2.2.2
         version: 2.2.2
@@ -57,20 +57,20 @@ importers:
   packages/babylon-vrm-0.0:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.25.0
-        version: 8.25.0
+        specifier: ^8.26.0
+        version: 8.26.0
       '@babylonjs/loaders':
         specifier: ^8.25.0
-        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        version: 8.25.0(@babylonjs/core@8.26.0)(babylonjs-gltf2interface@8.23.1)
 
   packages/babylon-vrm-viewer:
     dependencies:
       '@babylonjs/core':
-        specifier: ^8.25.0
-        version: 8.25.0
+        specifier: ^8.26.0
+        version: 8.26.0
       '@babylonjs/loaders':
         specifier: ^8.25.0
-        version: 8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)
+        version: 8.25.0(@babylonjs/core@8.26.0)(babylonjs-gltf2interface@8.23.1)
 
 packages:
 
@@ -103,8 +103,8 @@ packages:
     resolution: {integrity: sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babylonjs/core@8.25.0':
-    resolution: {integrity: sha512-hBPSp+hkcOd35Dg8eUh35nTrod+J8ayLw2f5n+nynQqVEDb54CptbVTeV6cd3cnrH65xSm+us/c+h1H6JzAbXw==}
+  '@babylonjs/core@8.26.0':
+    resolution: {integrity: sha512-3FeiI4I280lre57yqwbBkTUWfussXz4MT89tOotMstRSDkjC8M/LmoJFjp9Vj0hdWK40E1FxZ56G8YR8vdqdVw==}
 
   '@babylonjs/loaders@8.25.0':
     resolution: {integrity: sha512-hoXE/AwOli7l+R3Nz7cmUsnt5cSrIRQWaGaUjmQ4dZJNI0JqzmkxUuQq9eJfNUtjDnjEM1RfXzIlt2QdFg4KoA==}
@@ -1828,11 +1828,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@babylonjs/core@8.25.0': {}
+  '@babylonjs/core@8.26.0': {}
 
-  '@babylonjs/loaders@8.25.0(@babylonjs/core@8.25.0)(babylonjs-gltf2interface@8.23.1)':
+  '@babylonjs/loaders@8.25.0(@babylonjs/core@8.26.0)(babylonjs-gltf2interface@8.23.1)':
     dependencies:
-      '@babylonjs/core': 8.25.0
+      '@babylonjs/core': 8.26.0
       babylonjs-gltf2interface: 8.23.1
 
   '@bcoe/v8-coverage@1.0.2': {}
