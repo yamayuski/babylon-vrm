@@ -6,6 +6,7 @@
         "dockerfile": "Dockerfile",
         "context": ".."
     },
+    "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/workspace,consistency=cached",
     "workspaceFolder": "/workspace",
     "remoteUser": "node",
     "containerUser": "node",
@@ -38,7 +39,6 @@
             ],
             "settings": {
                 "git.autofetch": "all",
-                "git.enableCommitSigning": true,
                 "git.enableSmartCommit": true,
                 "git.openRepositoryInParentFolders": "never",
                 "git.pruneOnFetch": true,
