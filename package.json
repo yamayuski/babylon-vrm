@@ -1,4 +1,6 @@
 {
+    "name": "babylon-vrm-root",
+    "private": true,
     "type": "module",
     "publishConfig": {
         "access": "public",
@@ -28,25 +30,27 @@
         "email": "m.yamagishi90+git@gmail.com",
         "url": "https://cafe-capy.net"
     },
-    "name": "babylon-vrm-root",
-    "private": true,
-    "packageManager": "pnpm@10.14.0",
+    "packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706",
     "engines": {
         "node": "^22.11.0 || ^24.6.0"
     },
     "devDependencies": {
-        "@babylonjs/core": "^8.26.0",
-        "@babylonjs/loaders": "^8.25.0",
-        "@biomejs/biome": "2.2.3",
-        "@changesets/cli": "^2.29.6",
+        "@babylonjs/core": "catalog:",
+        "@babylonjs/loaders": "catalog:",
+        "@biomejs/biome": "catalog:",
+        "@changesets/cli": "^2.29.7",
         "@commitlint/cli": "^19.8.1",
         "@commitlint/config-conventional": "^19.8.1",
         "@commitlint/prompt-cli": "^19.8.1",
-        "@types/node": "^24.3.1",
+        "@commitlint/types": "^19.8.1",
+        "@types/json-schema": "^7.0.15",
+        "@types/node": "^24.4.0",
         "@vitest/coverage-v8": "^3.2.4",
+        "babylonjs-gltf2interface": "catalog:",
         "cross-env": "^10.0.0",
         "husky": "^9.1.7",
-        "rolldown": "1.0.0-beta.35",
+        "json-schema-to-typescript": "^15.0.4",
+        "rolldown": "1.0.0-beta.37",
         "typescript": "^5.9.2",
         "vite": "^7.1.5",
         "vitest": "^3.2.4"
@@ -54,8 +58,8 @@
     "scripts": {
         "test": "pnpm run --recursive --if-present test",
         "test:coverage": "pnpm run --recursive --if-present test:coverage",
-        "lint": "npx @biomejs/biome ci",
-        "lint:fix": "npx @biomejs/biome check --write --unsafe",
+        "lint": "pnpm exec biome ci",
+        "lint:fix": "pnpm exec biome check --write --unsafe",
         "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
         "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build",
         "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run lint:fix",

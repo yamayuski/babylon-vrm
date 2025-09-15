@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "module": "es2020",
-        "target": "es2021",
+        "target": "esnext",
         "moduleResolution": "node",
         "importHelpers": true,
         "declaration": true,

@@ -1,0 +1,62 @@
+{
+    "name": "@yamayuski/babylon-vrm-materials_mtoon-1.0",
+    "type": "module",
+    "version": "0.0.1-alpha.0",
+    "description": "VRM 1.0 VRMC_materials_mtoon-1.0 implementation for Babylon.js",
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yamayuski/babylon-vrm.git"
+    },
+    "keywords": [
+        "3D",
+        "html5",
+        "webgl",
+        "webgpu",
+        "babylon.js",
+        "gltf",
+        "vrm"
+    ],
+    "homepage": "https://github.com/yamayuski/babylon-vrm",
+    "bugs": {
+        "url": "https://github.com/yamayuski/babylon-vrm/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Masaru Yamagishi",
+        "email": "m.yamagishi90+git@gmail.com",
+        "url": "https://cafe-capy.net"
+    },
+    "files": [
+        "dist/**"
+    ],
+    "main": "dist/umd/babylon-vrm-materials_mtoon-1.0.umd.cjs",
+    "module": "dist/esm/babylon-vrm-materials_mtoon-1.0.esm.js",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "import": "./dist/esm/babylon-vrm-materials_mtoon-1.0.esm.js",
+            "require": "./dist/cjs/babylon-vrm-materials_mtoon-1.0.umd.cjs"
+        }
+    },
+    "dependencies": {
+        "@yamayuski/babylon-vrm-core": "workspace:*"
+    },
+    "devDependencies": {
+        "@babylonjs/core": "catalog:",
+        "@babylonjs/loaders": "catalog:"
+    },
+    "peerDependencies": {
+        "@babylonjs/core": "^8.0.0",
+        "@babylonjs/loaders": "^8.0.0"
+    },
+    "scripts": {
+        "test": "vitest --passWithNoTests",
+        "test:coverage": "vitest run --coverage --passWithNoTests",
+        "build": "rm -rf dist && vite build && tsc --declaration --emitDeclarationOnly --outDir dist/types"
+    }
+}

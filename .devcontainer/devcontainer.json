@@ -52,10 +52,25 @@
                 "github.copilot.chat.languageContext.inline.typescript.enabled": true,
                 "github.copilot.chat.languageContext.typescript.enabled": true,
                 "github.copilot.chat.notebook.followCellExecution.enabled": true,
+                "github.copilot.chat.alternateGptPrompt.enabled": true,
                 "github.copilot.enable": {
                     "markdown": true
                 },
-                "github.copilot.nextEditSuggestions.enabled": true
+                "github.copilot.nextEditSuggestions.enabled": true,
+                "editor.formatOnSave": true,
+                "[json]": {
+                    "editor.defaultFormatter": "biomejs.biome"
+                },
+                "[jsonc]": {
+                    "editor.quickSuggestions": {
+                        "strings": true
+                    },
+                    "editor.suggest.insertMode": "replace",
+                    "editor.defaultFormatter": "biomejs.biome"
+                },
+                "[typescript]": {
+                    "editor.defaultFormatter": "biomejs.biome"
+                }
             }
         }
     }
