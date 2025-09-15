@@ -46,7 +46,7 @@
         "@vitest/coverage-v8": "^3.2.4",
         "cross-env": "^10.0.0",
         "husky": "^9.1.7",
-        "rolldown": "1.0.0-beta.35",
+        "rolldown": "1.0.0-beta.37",
         "typescript": "^5.9.2",
         "vite": "^7.1.5",
         "vitest": "^3.2.4"
