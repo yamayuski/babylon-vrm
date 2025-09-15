@@ -198,7 +198,7 @@ function resolveType(schema: StructuredSchema, propName: string): string {
             return "Record<string, unknown>";
         default:
             console.warn(
-                `Warning: Property "${propName}" is of type object but has no defined properties. Using "unknown".`,
+                `Warning: Property "${propName}" has unknown or unsupported type "${schema.type}". Using "unknown".`,
             );
             return "unknown";
     }
