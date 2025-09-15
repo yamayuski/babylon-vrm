@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Fix lint with Biome",
+            "type": "shell",
+            "command": "pnpm run lint:fix"
+        }
+    ]
+}

@@ -1,14 +1,13 @@
 # syntax=docker/dockerfile:1.4
 # check=error=true
 
-ARG NPM_VERSION=11.5.2
-
-FROM --platform=${BUILDPLATFORM:-linux/amd64} mcr.microsoft.com/devcontainers/typescript-node:2-22-bookworm
+FROM --platform=${BUILDPLATFORM:-linux/amd64} mirror.gcr.io/node:24
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN su node -c "umask 0002 && npm install -g npm@${NPM_VERSION}" \
+RUN npm install -g npm@latest \
     && mkdir -p /workspace \
-    && chown node:node /workspace
+    && chown node:node /workspace /usr/local/lib/node_modules \
+    && corepack use pnpm@10.16.1
 
 WORKDIR /workspace
