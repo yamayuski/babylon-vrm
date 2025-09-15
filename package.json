@@ -62,7 +62,7 @@
         "lint:fix": "pnpm exec biome check --write --unsafe",
         "build:dev": "cross-env NODE_ENV=development pnpm run --recursive --if-present build",
         "build:prod": "cross-env NODE_ENV=production pnpm run --recursive --if-present build",
-        "generate-schema": "pnpm run --recursive --if-present generate-schema && pnpm run lint:fix",
+        "generate-schema": "pnpm run --filter \"*schema-generator*\" generate",
         "ci": "pnpm run lint && pnpm run build:prod && pnpm test",
         "prepare": "husky",
         "commit": "commit"
