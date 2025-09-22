@@ -3,7 +3,7 @@ packages:
 
 catalog:
   '@babylonjs/core': 8.27.0
-  '@babylonjs/loaders': 8.27.0
+  '@babylonjs/loaders': 8.28.1
   '@biomejs/biome': 2.2.4
   babylonjs-gltf2interface: 8.27.0
 
