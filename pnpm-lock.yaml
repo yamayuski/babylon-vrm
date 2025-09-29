@@ -45,8 +45,8 @@ importers:
         specifier: ^19.8.1
         version: 19.8.1(@types/node@24.5.2)(typescript@5.9.2)
       '@commitlint/types':
-        specifier: ^19.8.1
-        version: 19.8.1
+        specifier: ^20.0.0
+        version: 20.0.0
       '@types/json-schema':
         specifier: ^7.0.15
         version: 7.0.15
