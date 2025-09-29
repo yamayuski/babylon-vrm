@@ -2,10 +2,10 @@ packages:
   - packages/*
 
 catalog:
-  '@babylonjs/core': 8.28.1
-  '@babylonjs/loaders': 8.28.1
+  '@babylonjs/core': 8.29.0
+  '@babylonjs/loaders': 8.29.0
   '@biomejs/biome': 2.2.4
-  babylonjs-gltf2interface: 8.28.1
+  babylonjs-gltf2interface: 8.29.0
 
 onlyBuiltDependencies:
   - esbuild

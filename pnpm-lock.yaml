@@ -7,17 +7,14 @@ settings:
 catalogs:
   default:
     '@babylonjs/core':
-      specifier: 8.28.1
-      version: 8.28.1
+      specifier: 8.29.0
+      version: 8.29.0
     '@babylonjs/loaders':
-      specifier: 8.28.1
-      version: 8.28.1
+      specifier: 8.29.0
+      version: 8.29.0
     '@biomejs/biome':
       specifier: 2.2.4
       version: 2.2.4
-    babylonjs-gltf2interface:
-      specifier: 8.28.1
-      version: 8.28.1
 
 importers:
 
@@ -25,10 +22,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
       '@biomejs/biome':
         specifier: 'catalog:'
         version: 2.2.4
@@ -57,8 +54,8 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5)(yaml@2.8.1))
       babylonjs-gltf2interface:
-        specifier: 'catalog:'
-        version: 8.28.1
+        specifier: 8.29.0
+        version: 8.29.0
       cross-env:
         specifier: ^10.0.0
         version: 10.0.0
@@ -89,10 +86,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_materials_mtoon-1.0:
     dependencies:
@@ -102,10 +99,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_node_constraint-1.0:
     dependencies:
@@ -115,10 +112,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_springBone-1.0:
     dependencies:
@@ -128,10 +125,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_springBone_extended_collider-1.0:
     dependencies:
@@ -141,10 +138,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_vrm-1.0:
     dependencies:
@@ -154,10 +151,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRMC_vrm_animation-1.0:
     dependencies:
@@ -167,10 +164,10 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/VRM_0.0:
     dependencies:
@@ -180,19 +177,19 @@ importers:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/core:
     devDependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
 
   packages/schema-generator:
     devDependencies:
@@ -204,10 +201,10 @@ importers:
     dependencies:
       '@babylonjs/core':
         specifier: 'catalog:'
-        version: 8.28.1
+        version: 8.29.0
       '@babylonjs/loaders':
         specifier: 'catalog:'
-        version: 8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)
+        version: 8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)
       '@yamayuski/babylon-vrm-0.0':
         specifier: workspace:*
         version: link:../VRM_0.0
@@ -247,11 +244,11 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
-  '@babylonjs/core@8.28.1':
-    resolution: {integrity: sha512-GbYNWax9EtnHh6y0XnHRLwmlNZ7b2BKGDxWH3VJnuxvjBL3IGim8SzfJLaLRwXQvcs/RBdZxfr5l7g0q7RRg2w==}
+  '@babylonjs/core@8.29.0':
+    resolution: {integrity: sha512-4gJLoPSgOJl1SgYMLUaa/Qpe3y9OOalzFnxN/OSgryTK26JutyBnbWznVYfFNDS6IDFjsqmRgCRaQQHzeOuz7Q==}
 
-  '@babylonjs/loaders@8.28.1':
-    resolution: {integrity: sha512-fCCjiO7kgRqHMmypzl8rRH36Ig9zVHCEUL3uS24KKEttVB2m8sk5/4/bMftM7aUq/CgPiD89rH6HKWLSUNuG6A==}
+  '@babylonjs/loaders@8.29.0':
+    resolution: {integrity: sha512-UL+pzRxxHedsDD+vxpkk0bASJIyRH7jHbgJ+NSA/OpyPQR1fGYsJICSANP2chX3MeOJsFnSoW20qPQaxuU0B4A==}
     peerDependencies:
       '@babylonjs/core': ^8.0.0
       babylonjs-gltf2interface: ^8.0.0
@@ -1175,8 +1172,8 @@ packages:
   ast-v8-to-istanbul@0.3.5:
     resolution: {integrity: sha512-9SdXjNheSiE8bALAQCQQuT6fgQaoxJh7IRYrRGZ8/9nv8WhJeC1aXAwN8TbaOssGOukUvyvnkgD9+Yuykvl1aA==}
 
-  babylonjs-gltf2interface@8.28.1:
-    resolution: {integrity: sha512-fouhhlGnsgDrVyprooZ8KeBcThFYL+ecjb8gffJYGeIT8MXAfvQvz70zBxXIOT4OQfTaf5MpEqMzJ24C1Q0fjQ==}
+  babylonjs-gltf2interface@8.29.0:
+    resolution: {integrity: sha512-oCerEZSRCSflzzSGjcobAE5WFU7eEVIH/Ti5ge+cUCumkQQDIbu27NKYHnI9I2eDBmBB8OFzvdACSS9KhVdDaw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -2202,12 +2199,12 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@babylonjs/core@8.28.1': {}
+  '@babylonjs/core@8.29.0': {}
 
-  '@babylonjs/loaders@8.28.1(@babylonjs/core@8.28.1)(babylonjs-gltf2interface@8.28.1)':
+  '@babylonjs/loaders@8.29.0(@babylonjs/core@8.29.0)(babylonjs-gltf2interface@8.29.0)':
     dependencies:
-      '@babylonjs/core': 8.28.1
-      babylonjs-gltf2interface: 8.28.1
+      '@babylonjs/core': 8.29.0
+      babylonjs-gltf2interface: 8.29.0
 
   '@bcoe/v8-coverage@1.0.2': {}
 
@@ -3064,7 +3061,7 @@ snapshots:
       estree-walker: 3.0.3
       js-tokens: 9.0.1
 
-  babylonjs-gltf2interface@8.28.1: {}
+  babylonjs-gltf2interface@8.29.0: {}
 
   balanced-match@1.0.2: {}
 
