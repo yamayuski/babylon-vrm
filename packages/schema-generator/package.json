@@ -41,7 +41,7 @@
         }
     },
     "devDependencies": {
-        "tsx": "^4.20.5"
+        "tsx": "^4.21.0"
     },
     "scripts": {
         "test": "vitest",
